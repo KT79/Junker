@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ListFactFinds" type="id">List Fact Finds</item>
+    <item name="factFindEditText" type="id" />
+    <item name="dateEditText" type="id" />
+    <item name="dateTextView" type="id" />
+    <item name="saveButton" type="id" />
+    <item name="cancelButton" type="id" />
+</resources>

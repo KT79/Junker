@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Search, should appear as action button -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+
+        tools:showAsAction="ifRoom"
+        android:title="@string/search" />
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        tools:showAsAction="never"
+        />
+    <item
+        android:id="@+id/new_factfind"
+        android:title="@string/NewFactFind"
+        tools:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add"
+
+        />
+    <item
+        android:id="@+id/deleteItem"
+        android:title="@string/delete"
+        tools:showAsAction="ifRoom"
+        android:icon="@drawable/ic_del">
+
+    </item>
+</menu>

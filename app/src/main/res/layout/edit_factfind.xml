@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/EditFactFindText"
+        android:id="@+id/editFactFindText" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/titleEditText"
+        android:id="@+id/titleViewText"    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/titleViewText"
+        android:layout_alignBaseline="@id/titleViewText"
+        android:id="@+id/titleEditText"/>
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleViewText"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/factFindEditText"
+        android:id="@+id/factFindViewText"    />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEditText"
+        android:layout_toRightOf="@+id/factFindViewText"
+        android:layout_alignBaseline="@id/factFindViewText"
+        android:id="@id/factFindEditText"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/titleEditText"
+        android:layout_alignBaseline="@id/titleViewText"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="20dp"
+        android:text="@string/dateTextView"
+        android:id="@id/dateTextView"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveButton"
+        android:id="@id/saveButton"
+        android:layout_below="@id/titleEditText"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelButton"
+        android:layout_marginLeft="10dp"
+        android:id="@id/cancelButton"
+        android:layout_toRightOf="@id/saveButton"
+        android:layout_alignBaseline="@id/saveButton"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/fragment_container"
+        android:layout_below="@id/cancelButton"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/nextButton"/>
+        <fragment
+            android:id="@+id/navigation_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:name="uk.co.mcclure_solicitors.wwjmcclure.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer" />
+    </FrameLayout>
+</RelativeLayout>
